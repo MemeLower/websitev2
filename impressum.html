@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum | Marie P.</title>
+    <meta name="description" content="Impressum und rechtliche Informationen">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="index.html">Marie P.</a>
+            </div>
+            <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ich.html">ich</a></li>
+                <li><a href="selbst.html">selbst</a></li>
+                <li><a href="bei-mir.html">bei mir ...</a></li>
+                <li><a href="in-aus-mir.html">in/aus mir ...</a></li>
+                <li><a href="mit-mir.html">mit mir</a></li>
+                <li><a href="objektkunst.html">Objektkunst</a></li>
+                <li><a href="artenvielfalt.html">Artenvielfalt</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <div class="container">
+                <h1>Impressum</h1>
+            </div>
+        </div>
+
+        <section class="page-content">
+            <div class="container">
+                <div class="prose">
+                    <div style="background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem;">
+                        <p style="color: #856404; margin: 0;">
+                            <strong>Hinweis:</strong> Das Impressum wird derzeit für die eventuelle Anmeldung bei der Finanz vorbereitet. Die vollständigen Angaben werden in Kürze ergänzt.
+                        </p>
+                    </div>
+
+                    <h2>Angaben gemäß § 5 TMG</h2>
+
+                    <h3>Verantwortlich für den Inhalt:</h3>
+                    <p>
+                        Marie P.<br>
+                        Künstlerin & Malerin<br>
+                        <span style="color: #666;">[Anschrift wird ergänzt]</span><br>
+                        Wien, Österreich
+                    </p>
+
+                    <h3>Kontakt:</h3>
+                    <p>
+                        E-Mail: <a href="mailto:marie-p@aon.at">marie-p@aon.at</a>
+                    </p>
+
+                    <h3>Umsatzsteuer-Identifikationsnummer:</h3>
+                    <p style="color: #666;">[Wird bei Anmeldung ergänzt]</p>
+
+                    <h3>Haftungsausschluss:</h3>
+                    
+                    <h4>Haftung für Inhalte</h4>
+                    <p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.</p>
+
+                    <h4>Haftung für Links</h4>
+                    <p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.</p>
+
+                    <h4>Urheberrecht</h4>
+                    <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+
+                    <h3>Datenschutz</h3>
+                    <p>Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten erhoben werden, erfolgt dies stets auf freiwilliger Basis.</p>
+
+                    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #e0e0e0;">
+                        <p style="font-size: 0.9rem; color: #666;">
+                            Stand: <script>document.write(new Date().toLocaleDateString('de-DE'))</script> | Dieses Impressum wird bei Bedarf aktualisiert.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Marie P.</h3>
+                    <p>Künstlerin und Malerin aus Wien. Spezialisiert auf Acrylmalerei, Objektkunst und experimentelle Techniken.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ich.html">Über mich</a></li>
+                        <li><a href="bei-mir.html">Werke</a></li>
+                        <li><a href="objektkunst.html">Objektkunst</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <p>📧 marie-p@aon.at</p>
+                    <p>Bei Interesse an einem der Werke oder Wunsch nach Detailfotos bitte um direkte Kontaktaufnahme.</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Marie P. Alle Rechte vorbehalten.</p>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
