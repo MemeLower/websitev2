@@ -22,6 +22,7 @@
                 <li><a href="in-aus-mir.html">in/aus mir ...</a></li>
                 <li><a href="mit-mir.html">mit mir</a></li>
                 <li><a href="objektkunst.html">Objektkunst</a></li>
+                <li><a href="spray-art.html">Spray Art</a></li>
                 <li><a href="artenvielfalt.html">Artenvielfalt</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
@@ -161,8 +162,23 @@
     <script>
         function toggleMenu() {
             const navMenu = document.getElementById('navMenu');
-            navMenu.classList.toggle('active');
+            if (navMenu) {
+                navMenu.classList.toggle('active');
+            }
         }
+
+        // Close mobile menu when clicking on a link
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-menu a');
+            navLinks.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    const navMenu = document.getElementById('navMenu');
+                    if (navMenu && navMenu.classList.contains('active')) {
+                        navMenu.classList.remove('active');
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html>

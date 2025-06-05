@@ -6,16 +6,16 @@ import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const navigation = [
-  { name: "Home", href: "/" },
-  { name: "ich", href: "/ich" },
-  { name: "selbst", href: "/selbst" },
-  { name: "bei mir ...", href: "/bei-mir" },
-  { name: "in/aus mir ...", href: "/in-aus-mir" },
-  { name: "mit mir", href: "/mit-mir" },
-  { name: "Objektkunst", href: "/objektkunst" },
-  { name: "Spray Art", href: "/spray-art" },
-  { name: "Artenvielfalt", href: "/artenvielfalt" },
-  { name: "Kontakt", href: "/kontakt" },
+  { name: "Home", href: "index.html" },
+  { name: "ich", href: "ich.html" },
+  { name: "selbst", href: "selbst.html" },
+  { name: "bei mir ...", href: "bei-mir.html" },
+  { name: "in/aus mir ...", href: "in-aus-mir.html" },
+  { name: "mit mir", href: "mit-mir.html" },
+  { name: "Objektkunst", href: "objektkunst.html" },
+  { name: "Spray Art", href: "spray-art.html" },
+  { name: "Artenvielfalt", href: "artenvielfalt.html" },
+  { name: "Kontakt", href: "kontakt.html" },
 ]
 
 export function Header() {

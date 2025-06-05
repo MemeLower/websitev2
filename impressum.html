@@ -22,6 +22,7 @@
                 <li><a href="in-aus-mir.html">in/aus mir ...</a></li>
                 <li><a href="mit-mir.html">mit mir</a></li>
                 <li><a href="objektkunst.html">Objektkunst</a></li>
+                <li><a href="spray-art.html">Spray Art</a></li>
                 <li><a href="artenvielfalt.html">Artenvielfalt</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
@@ -46,39 +47,48 @@
 
                     <h2>Angaben gemäß § 5 TMG</h2>
 
-                    <h3>Verantwortlich für den Inhalt:</h3>
-                    <p>
-                        Marie P.<br>
-                        Künstlerin & Malerin<br>
-                        <span style="color: #666;">[Anschrift wird ergänzt]</span><br>
-                        Wien, Österreich
-                    </p>
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Verantwortlich für den Inhalt:</h3>
+                        <p>
+                            Marie P.<br>
+                            Künstlerin & Malerin<br>
+                            <span style="color: #666;">[Anschrift wird ergänzt]</span><br>
+                            Wien, Österreich
+                        </p>
+                    </div>
 
-                    <h3>Kontakt:</h3>
-                    <p>
-                        E-Mail: <a href="mailto:marie-p@aon.at">marie-p@aon.at</a>
-                    </p>
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Kontakt:</h3>
+                        <p>
+                            E-Mail: <a href="mailto:marie-p@aon.at" style="color: #3498db;">marie-p@aon.at</a>
+                        </p>
+                    </div>
 
-                    <h3>Umsatzsteuer-Identifikationsnummer:</h3>
-                    <p style="color: #666;">[Wird bei Anmeldung ergänzt]</p>
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Umsatzsteuer-Identifikationsnummer:</h3>
+                        <p style="color: #666;">[Wird bei Anmeldung ergänzt]</p>
+                    </div>
 
-                    <h3>Haftungsausschluss:</h3>
-                    
-                    <h4>Haftung für Inhalte</h4>
-                    <p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.</p>
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Haftungsausschluss:</h3>
+                        <h4>Haftung für Inhalte</h4>
+                        <p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.</p>
 
-                    <h4>Haftung für Links</h4>
-                    <p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.</p>
+                        <h4>Haftung für Links</h4>
+                        <p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.</p>
 
-                    <h4>Urheberrecht</h4>
-                    <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+                        <h4>Urheberrecht</h4>
+                        <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+                    </div>
 
-                    <h3>Datenschutz</h3>
-                    <p>Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten erhoben werden, erfolgt dies stets auf freiwilliger Basis.</p>
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Datenschutz</h3>
+                        <p>Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten erhoben werden, erfolgt dies stets auf freiwilliger Basis.</p>
+                    </div>
 
-                    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #e0e0e0;">
+                    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #ddd;">
                         <p style="font-size: 0.9rem; color: #666;">
-                            Stand: <script>document.write(new Date().toLocaleDateString('de-DE'))</script> | Dieses Impressum wird bei Bedarf aktualisiert.
+                            Stand: 2024 | Dieses Impressum wird bei Bedarf aktualisiert.
                         </p>
                     </div>
                 </div>
@@ -114,7 +124,7 @@
             
             <div class="footer-bottom">
                 <p>&copy; 2024 Marie P. Alle Rechte vorbehalten.</p>
-                <a href="kontakt.html">Kontakt</a>
+                <a href="impressum.html">Impressum</a>
             </div>
         </div>
     </footer>
@@ -122,8 +132,23 @@
     <script>
         function toggleMenu() {
             const navMenu = document.getElementById('navMenu');
-            navMenu.classList.toggle('active');
+            if (navMenu) {
+                navMenu.classList.toggle('active');
+            }
         }
+
+        // Close mobile menu when clicking on a link
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-menu a');
+            navLinks.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    const navMenu = document.getElementById('navMenu');
+                    if (navMenu && navMenu.classList.contains('active')) {
+                        navMenu.classList.remove('active');
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html>
