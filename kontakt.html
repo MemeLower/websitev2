@@ -41,32 +41,32 @@
                 <div class="contact-grid">
                     <div>
                         <h2>Interesse an meinen Werken?</h2>
-                        <p style="font-size: 1.1rem; margin-bottom: 2rem;">Bei Interesse an einem der Werke bzw. Wunsch nach Detailfotos oder einem extra Besichtigungs-/Präsentationstermin bitte um direkte Kontaktaufnahme.</p>
+                        <p style="font-size: 1.1rem; margin-bottom: 2rem;">
+                            Bei Interesse an einem der Werke bzw. Wunsch nach Detailfotos oder einem extra Besichtigungs-/Präsentationstermin bitte um direkte Kontaktaufnahme.
+                        </p>
 
-                        <div style="margin-bottom: 2rem;">
-                            <div class="contact-item">
-                                <span class="contact-icon">📧</span>
-                                <div>
-                                    <p style="font-weight: bold; margin-bottom: 0.25rem;">E-Mail</p>
-                                    <a href="mailto:marie-p@aon.at" style="color: #3498db;">marie-p@aon.at</a>
-                                </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h4>E-Mail</h4>
+                                <a href="mailto:marie-p@aon.at">marie-p@aon.at</a>
                             </div>
+                        </div>
 
-                            <div class="contact-item">
-                                <span class="contact-icon">🌐</span>
-                                <div>
-                                    <p style="font-weight: bold; margin-bottom: 0.25rem;">Website</p>
-                                    <p style="font-size: 0.9rem; color: #666; margin: 0;">Neue Website-Adresse wird in Kürze bekannt gegeben</p>
-                                </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🌐</div>
+                            <div>
+                                <h4>Website</h4>
+                                <p>Neue Website-Adresse wird in Kürze bekannt gegeben</p>
                             </div>
+                        </div>
 
-                            <div class="contact-item">
-                                <span class="contact-icon">📍</span>
-                                <div>
-                                    <p style="font-weight: bold; margin-bottom: 0.25rem;">Standort</p>
-                                    <p style="margin: 0;">Wien, Österreich</p>
-                                    <p style="font-size: 0.9rem; color: #666; margin: 0;">Genaue Anschrift auf Anfrage</p>
-                                </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Standort</h4>
+                                <p>Wien, Österreich</p>
+                                <p style="font-size: 0.9rem; color: #666;">Genaue Anschrift auf Anfrage</p>
                             </div>
                         </div>
 
@@ -83,10 +83,10 @@
                     </div>
 
                     <div style="text-align: center;">
-                        <img src="mpichl29/Kontaktinfos.png" alt="Kontaktinformationen" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); margin-bottom: 1.5rem;">
+                        <img src="mpichl29/Kontaktinfos.png" alt="Kontaktinformationen" style="width: 100%; max-width: 400px; border-radius: 8px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); margin-bottom: 1.5rem;">
 
                         <div style="background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 8px; padding: 1rem;">
-                            <p style="color: #856404; margin: 0; font-size: 0.9rem;">
+                            <p style="color: #856404; margin: 0;">
                                 <strong>Hinweis:</strong> Die Website-Adresse und Anschrift werden derzeit aktualisiert. Für aktuelle Informationen bitte per E-Mail kontaktieren.
                             </p>
                         </div>
@@ -94,7 +94,7 @@
                 </div>
 
                 <div style="text-align: center; margin-top: 3rem;">
-                    <a href="impressum.html" style="color: #3498db;">Impressum</a>
+                    <a href="impressum.html" style="color: #3498db; text-decoration: underline;">Impressum</a>
                 </div>
             </div>
         </section>
@@ -136,23 +136,8 @@
     <script>
         function toggleMenu() {
             const navMenu = document.getElementById('navMenu');
-            if (navMenu) {
-                navMenu.classList.toggle('active');
-            }
+            navMenu.classList.toggle('active');
         }
-
-        // Close mobile menu when clicking on a link
-        document.addEventListener('DOMContentLoaded', function() {
-            const navLinks = document.querySelectorAll('.nav-menu a');
-            navLinks.forEach(function(link) {
-                link.addEventListener('click', function() {
-                    const navMenu = document.getElementById('navMenu');
-                    if (navMenu && navMenu.classList.contains('active')) {
-                        navMenu.classList.remove('active');
-                    }
-                });
-            });
-        });
     </script>
 </body>
 </html>

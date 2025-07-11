@@ -40,17 +40,13 @@
             <div class="container">
                 <div class="about-grid">
                     <div class="about-text">
-                        <div style="margin-bottom: 2rem;">
+                        <div class="prose">
                             <h2>Oberflächlich betrachtet könnte man mich so beschreiben:</h2>
                             <p>kreativ, bunt, crazy, leicht chaotisch, ein Sonnenschein, optimistisch, lebenslustig, selten ruhig = kommunikativ ;-)</p>
-                        </div>
 
-                        <div style="margin-bottom: 2rem;">
                             <h2>Wer mich näher kennt, würde u.a. aber auch folgendes über mich sagen:</h2>
                             <p>nachdenklich, sensibel, verletzlich, reflektiert, selten, aber doch auch einmal zornig</p>
-                        </div>
 
-                        <div class="prose">
                             <p>Nicht jeder kennt diese - unbestritten - sehr unterschiedlichen Seiten von mir, weil ich sie nicht immer bzw. durchaus selektiv zeige. Diese Webpages brechen insofern damit, da sie ganz mich selbst bzw. das Ergebnis davon zeigen. Denn künstlerisches Gestalten ist nicht nur eine Ausdrucksmöglichkeit seiner Kreativität sondern auch ein Mittel, sich besser kennen zu lernen und neu zu erfahren. Ob man will, oder nicht, das Unterbewusstsein gestaltet immer mit. Man(n)/Frau gibt daher automatisch auch Persönliches preis.</p>
                         </div>
                     </div>
@@ -64,20 +60,23 @@
                     <div class="about-image">
                         <img src="mpichl29/ICH-Abendstimmung.jpg" alt="Abendstimmung">
                         <div class="image-caption">
-                            <h3>Abendstimmung</h3>
-                            <p>2012 - 20x25 oval (Acryl & permanent Universalstift auf Malmappe)</p>
+                            <strong>Abendstimmung</strong><br>
+                            2012 - 20x25 oval (Acryl & permanent Universalstift auf Malmappe)
                         </div>
                     </div>
+                    
                     <div class="about-text">
-                        <blockquote>
-                            "Wer nach außen schaut, träumt. Wer nach innen sieht, erwacht."
-                            <footer>— Carl Gustav Jung, schweizer Psychiater</footer>
-                        </blockquote>
+                        <div class="prose">
+                            <blockquote>
+                                "Wer nach außen schaut, träumt. Wer nach innen sieht, erwacht."
+                                <footer>— Carl Gustav Jung, schweizer Psychiater</footer>
+                            </blockquote>
 
-                        <blockquote style="margin-top: 2rem;">
-                            "Nur wer sich ändert, bleibt sich treu."
-                            <footer>— Wolf Biermann, deutscher Liedermacher und Lyriker</footer>
-                        </blockquote>
+                            <blockquote>
+                                "Nur wer sich ändert, bleibt sich treu."
+                                <footer>— Wolf Biermann, deutscher Liedermacher und Lyriker</footer>
+                            </blockquote>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -120,23 +119,8 @@
     <script>
         function toggleMenu() {
             const navMenu = document.getElementById('navMenu');
-            if (navMenu) {
-                navMenu.classList.toggle('active');
-            }
+            navMenu.classList.toggle('active');
         }
-
-        // Close mobile menu when clicking on a link
-        document.addEventListener('DOMContentLoaded', function() {
-            const navLinks = document.querySelectorAll('.nav-menu a');
-            navLinks.forEach(function(link) {
-                link.addEventListener('click', function() {
-                    const navMenu = document.getElementById('navMenu');
-                    if (navMenu && navMenu.classList.contains('active')) {
-                        navMenu.classList.remove('active');
-                    }
-                });
-            });
-        });
     </script>
 </body>
 </html>

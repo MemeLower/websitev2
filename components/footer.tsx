@@ -9,8 +9,7 @@ export function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4 font-playfair">Marie P.</h3>
             <p className="text-gray-300 mb-4">
-              Künstlerin und Malerin aus Wien. Spezialisiert auf Acrylmalerei, Objektkunst, Spray Art und experimentelle
-              Techniken.
+              Amateurkünstlerin und Malerin aus Wien. Spezialisiert auf Acrylmalerei, Objektkunst, Spray Art und experimentelle Techniken.
             </p>
           </div>
 

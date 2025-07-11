@@ -26,14 +26,14 @@ const earlyWorks = [
     year: "2008",
     size: "10x30",
     medium: "Acryl auf Malplatte",
-    image: "/mpichl29/B-BEI-Die_tanzenden_Spermien.jpg",
+    image: "/mpichl29/B-BEI-Die_tanzenden_Spermien-NEW.jpg",
   },
   {
     title: "jungle",
     year: "2009",
     size: "19,8x40",
     medium: "Acryl auf Leinwand",
-    image: "/mpichl29/B-BEI-jungle.jpg",
+    image: "/mpichl29/B-BEI-jungle-NEW.jpg",
   },
   {
     title: "Skyline",

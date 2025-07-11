@@ -24,20 +24,19 @@ export function Hero() {
           bei, in/aus & mit mir... gestaltet/geschaffen
         </p>
         <p className="text-lg mb-12 max-w-2xl mx-auto opacity-90">
-          Malerei, Installationen und kreative Werke einer Künstlerin, die ihrer Fantasie und ihren Gefühlen freien Lauf
-          lässt.
+          Malerei, Installationen und diverse kreative Werke einer Amateurkünstlerin, die ihrer Fantasie und ihren Gefühlen einfach freien Lauf lässt.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button asChild size="lg" className="bg-white text-black hover:bg-gray-100">
-            <Link href="/early-works">Werke entdecken</Link>
+            <Link href="/bei-mir">Werke entdecken</Link>
           </Button>
           <Button
             asChild
             variant="outline"
             size="lg"
-            className="border-white text-white hover:bg-white hover:text-black"
+            className="border-white text-white hover:bg-white hover:text-black bg-transparent"
           >
-            <Link href="/about">Über mich</Link>
+            <Link href="/ich">Über mich</Link>
           </Button>
         </div>
       </div>

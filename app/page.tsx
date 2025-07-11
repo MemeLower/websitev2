@@ -1,6 +1,5 @@
 import { Hero } from "@/components/hero"
 import { About } from "@/components/about"
-import { FeaturedWorks } from "@/components/featured-works"
 import { Exhibitions } from "@/components/exhibitions"
 
 export default function HomePage() {
@@ -8,7 +7,6 @@ export default function HomePage() {
     <main>
       <Hero />
       <About />
-      <FeaturedWorks />
       <Exhibitions />
     </main>
   )
